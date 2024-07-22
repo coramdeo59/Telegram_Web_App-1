@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Card from "./Components/Card/Card";
 import Cart from "./Components/Cart/Cart";
@@ -48,7 +48,7 @@ function App() {
   return (
     <>
       <h1 className="heading">Order Food</h1>
-      <Cart cartItems={cartItems} onCheckout={onCheckout}/>
+      <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className="cards__container">
         {foods.map((food) => {
           return (
